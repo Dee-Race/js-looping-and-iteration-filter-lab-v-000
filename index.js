@@ -19,3 +19,14 @@ function fuzzyMatch(drivers, letters) {
   }
   return newArray;
 };
+
+function matchName(drivers, name) {
+  const newArray = [];
+  for (const user of drivers) {
+    if (user.name == name) {
+      newArray.push(user);
+    }
+  }
+  return newArray;
+}
+
