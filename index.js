@@ -9,3 +9,13 @@ function findMatching(drivers, name) {
   }
   return newArray;
 };
+
+function fuzzyMatch(drivers, letters) {
+  const newArray = [];
+  for (const user of drivers) {
+    if (user.startsWith(letters)) {
+      newArray.push(user)
+    }
+  }
+  return newArray;
+};
